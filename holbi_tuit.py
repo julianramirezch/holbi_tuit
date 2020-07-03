@@ -34,7 +34,7 @@ def get_news_link():
 
         user_selection_link = input('Select your link (1, 2, 3,): ')
         while not user_selection_link.isnumeric():
-            user_selection_link = input('Select your link (1, 2, 3,): ')
+            user_selection_link = input('Select your link (1, 2, 3): ')
 
         if int(user_selection_link) == 1:
             return(str(links[11]))
@@ -68,7 +68,7 @@ def get_news_link():
 
         user_selection_link = input('Select your link (1, 2, 3, 4, 5, 6, 7): ')
         while not user_selection_link.isnumeric():
-            user_selection_link = input('Select your link (1, 2, 3,): ')
+            user_selection_link = input('Select your link (1, 2, 3, 4, 5, 6, 7): ')
 
         if int(user_selection_link) == 1:
             return(str(links[86]))
