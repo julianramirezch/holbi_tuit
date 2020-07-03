@@ -43,7 +43,7 @@ def get_news_link():
         elif int(user_selection_link) == 3:
             return(str(links[23]))
         else:
-            print('ERROR: Choose 1, 2, 3, 5, 6, 7')
+            print('ERROR: Choose 1, 2, 3')
             return('')
 
     # The Verge Selection
@@ -85,7 +85,7 @@ def get_news_link():
         elif int(user_selection_link) == 7:
             return(str(links[104]))
         else:
-            print('ERROR: Choose 1, 2 or 3')
+            print('ERROR: Choose 1, 2, 3, 5, 6, 7')
             return('')
 
 
