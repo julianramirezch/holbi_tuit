@@ -46,44 +46,44 @@ def get_news_link():
             print('ERROR: Choose 1, 2, 3')
             return('')
 
-    # The Verge Selection
+    # Wired Selection
     if int(user_portal) == 2:
-        r = requests.get("https://www.theverge.com/")
+        r = requests.get("https://www.wired.com/")
         webpage = html.fromstring(r.content)
         links = webpage.xpath('//a/@href')
-        if len(links[86]) <= 115:
-            print('1. {}'.format(links[86]))
-        if len(links[89]) <= 115:
-            print('2. {}'.format(links[89]))
-        if len(links[92]) <= 115:
-            print('3. {}'.format(links[92]))
-        if len(links[95]) <= 115:
-            print('4. {}'.format(links[95]))
-        if len(links[98]) <= 115:
-            print('5. {}'.format(links[98]))
-        if len(links[101]) <= 115:
-            print('6. {}'.format(links[101]))
-        if len(links[104]) <= 115:
-            print('7. {}'.format(links[104]))
+        if len(links[55]) <= 250:
+            print('1. {}'.format(links[55]))
+        if len(links[56]) <= 250:
+            print('2. {}'.format(links[56]))
+        if len(links[57]) <= 250:
+            print('3. {}'.format(links[57]))
+        if len(links[58]) <= 250:
+            print('4. {}'.format(links[58]))
+        if len(links[59]) <= 250:
+            print('5. {}'.format(links[59]))
+        if len(links[60]) <= 250:
+            print('6. {}'.format(links[60]))
+        if len(links[61]) <= 250:
+            print('7. {}'.format(links[61]))
 
         user_selection_link = input('Select your link (1, 2, 3, 4, 5, 6, 7): ')
         while not user_selection_link.isnumeric():
             user_selection_link = input('Select your link (1, 2, 3, 4, 5, 6, 7): ')
 
         if int(user_selection_link) == 1:
-            return(str(links[86]))
+            return(str(links[55]))
         elif int(user_selection_link) == 2:
-            return(str(links[89]))
+            return(str(links[56]))
         elif int(user_selection_link) == 3:
-            return(str(links[92]))
+            return(str(links[57]))
         elif int(user_selection_link) == 4:
-            return(str(links[95]))
+            return(str(links[58]))
         elif int(user_selection_link) == 5:
-            return(str(links[98]))
+            return(str(links[59]))
         elif int(user_selection_link) == 6:
-            return(str(links[101]))
+            return(str(links[60]))
         elif int(user_selection_link) == 7:
-            return(str(links[104]))
+            return(str(links[61]))
         else:
             print('ERROR: Choose 1, 2, 3, 5, 6, 7')
             return('')
@@ -96,12 +96,11 @@ def holbi_tuit():
     access_token = 'YOUR ACCESS TOKEN'
     access_token_secret = 'YOUR ACCESS TOKEN SECRET'
     link = get_news_link()
-    message = 'Hi, this is Holbi tuit \U0001F916 ! I was created to tweet every day. I use the news portal https://news.ycombinator.com/ or https://www.theverge.com/ this is the top news: '
+    message = 'Hi, this is Holbi tuit \U0001F916 ! I was created to tweet every day. I use the news portal https://news.ycombinator.com/ or https://www.wired.com/ this is the top news: '
     tuit = message + '\n' + link
-    if len(tuit) <= 280:
-        print('Today Tuit:')
-        print(tuit)
-        print('Characters: {}'.format(len(tuit)))
+    print('Today Tuit:')
+    print(tuit)
+    print('Characters: {}'.format(len(tuit)))
 
     user_selection = tuit_decision(input('Do you want to do this tweet?(y/n): '))
     if user_selection is 'y':
