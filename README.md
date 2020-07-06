@@ -12,6 +12,8 @@ Twitter bot made in python using tweepy , requests and lxml libraries. The bot u
 
 <H3> Requirements </H3>
 You must create twitter developer account (https://developer.twitter.com) and create:
+
+
 | KEY | Description                    |
 | ------------- | ------------------------------ |
 | `consumer_key`      |  YOUR CONSUMER KEY   |
