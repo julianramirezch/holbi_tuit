@@ -1,7 +1,7 @@
 <H1 align="center"> Holbi Twitter Bot </H1>
 
 <p align="center">
-   <a href="https://www.holbertonschool.com/co"><img src="https://www.pinclipart.com/pindetail/xmRJhT_jpg-free-library-bot-icon-free-png-and/" width="170" height="170"/></a>
+   <a href="https://www.holbertonschool.com/co"><img src="https://cdn.pixabay.com/photo/2017/10/24/00/39/bot-icon-2883144_960_720.png" width="170" height="170"/></a>
 
 <p align="center"> 
    <b>Holberton School Bogotá D.C</b>
