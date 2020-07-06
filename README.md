@@ -23,11 +23,11 @@ You must create twitter developer account (https://developer.twitter.com) and cr
 ### REMEMBER NEVER SHARE YOUR KEYS
 
 <H3> Program Download </H3>
->To download this program, you must clone this github repo and download it:
+To download this program, you must clone this github repo and download it:
 
     git clone https://github.com/julianramirezch/holbi_twitter_bot.git
 
->Once in your local repo, you can run it from the folder using the following command:
+Once in your local repo, you can run it from the folder using the following command:
 
     python holbi_tuit.py
 
