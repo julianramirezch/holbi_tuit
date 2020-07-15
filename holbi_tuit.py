@@ -25,12 +25,10 @@ def get_news_link():
         r = requests.get("https://news.ycombinator.com/best")
         webpage = html.fromstring(r.content)
         links = webpage.xpath('//a/@href')
-        if len(links[11]) <= 115:
-            print('1. {}'.format(links[11]))
-        if len(links[17]) <= 115:
-            print('2. {}'.format(links[17]))
-        if len(links[23]) <= 115:
-            print('3. {}'.format(links[23]))
+
+        print('1. {}'.format(links[11]))
+        print('2. {}'.format(links[17]))
+        print('3. {}'.format(links[23]))
 
         user_selection_link = input('Select your link (1, 2, 3,): ')
         while not user_selection_link.isnumeric():
@@ -51,20 +49,14 @@ def get_news_link():
         r = requests.get("https://www.wired.com/")
         webpage = html.fromstring(r.content)
         links = webpage.xpath('//a/@href')
-        if len(links[55]) <= 250:
-            print('1. {}'.format(links[55]))
-        if len(links[56]) <= 250:
-            print('2. {}'.format(links[56]))
-        if len(links[57]) <= 250:
-            print('3. {}'.format(links[57]))
-        if len(links[58]) <= 250:
-            print('4. {}'.format(links[58]))
-        if len(links[59]) <= 250:
-            print('5. {}'.format(links[59]))
-        if len(links[60]) <= 250:
-            print('6. {}'.format(links[60]))
-        if len(links[61]) <= 250:
-            print('7. {}'.format(links[61]))
+
+        print('1. {}'.format(links[55]))
+        print('2. {}'.format(links[56]))
+        print('3. {}'.format(links[57]))
+        print('4. {}'.format(links[58]))
+        print('5. {}'.format(links[59]))
+        print('6. {}'.format(links[60]))
+        print('7. {}'.format(links[61]))
 
         user_selection_link = input('Select your link (1, 2, 3, 4, 5, 6, 7): ')
         while not user_selection_link.isnumeric():
