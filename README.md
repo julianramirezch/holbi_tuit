@@ -29,7 +29,7 @@ To download this program, you must clone this github repo and download it:
 
 Once in your local repo, you can run it from the folder using the following command:
 
-    python holbi_tuit.py
+    python3 holbi_tuit.py
 
 ## Author: 
 ### Julian Ramirez <julianramirezch1@gmail.com>
